@@ -248,7 +248,7 @@ function onRun(context) {
 
 	function showResult (cr) {
 		// Check against AA / AAA
-		var result = "AA Failed";
+		var result = "🅾️ AA Failed";
 		var fontSize = 14;
 
 		// add a message when background has alpha
@@ -269,11 +269,11 @@ function onRun(context) {
 				var isBold = true;
 			}
 		}
-		if ((fontSize > 18 || (fontSize >= 14 && isBold)) && cr >=3) result = "AA passed (large or bold/medium text)"
-		if(cr >= 4.5) result = "AA passed"
+		if ((fontSize > 18 || (fontSize >= 14 && isBold)) && cr >=3) result = "✅ AA passed (large or bold/medium text)"
+		if(cr >= 4.5) result = "✅ AA passed"
 
-		if ((fontSize > 18 || (fontSize >= 14 && isBold)) && cr >=4.5) result = "AAA passed (large or bold/medium text)"
-		if(cr >= 7.0) result = "AAA passed"
+		if ((fontSize > 18 || (fontSize >= 14 && isBold)) && cr >=4.5) result = "✅ AAA passed (large or bold/medium text)"
+		if(cr >= 7.0) result = "✅ AAA passed"
 
 		// Show ratio
 		[doc showMessage:result + "  " + cr + ":1" + msg]
